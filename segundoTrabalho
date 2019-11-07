@@ -1,0 +1,47 @@
+Escreve um programa que permita um usuario armazenar e manipular uma colecao
+de 20 numeros inteiros.
+
+Inicialmente o programa vai pedir ao usuario que introduza todos os elementos da colecao.
+
+Em seguida, o programa deve mostrar o seguinte menu:
+
+1 Inverte
+2 Primos
+3 Soma Impares
+4 Oderna Crescente
+5 Ordena descrescente
+6 Fatorial
+7 Mostra 
+8 Maior
+9 Vaza
+
+Se a opcao 1 for selecionada o profgama inverte a ordem dos elementos, de tal
+forma que o primeiro passo a ser util o segundo penultimo
+assim sucessivamente e entao reapresenta o menu.
+
+Se a opcao 2 for selecionada, o programa mostra os numeros primos existentes na
+ colecao e entao reapresenta o menu.
+
+Se a opcao 3 for selecionada o programa soma e mostra o somatorio dos elementos que
+ocupam as posicoes impares do array.
+
+Se a opcao 4 for selecionada o programa orderna a colecao de ordem crescente 
+e reapresenta o menu.
+
+Se a opcao 5 for selecionada o programa ordena a colecao em ordem descrescente
+e entao reapresente o menu.
+
+Se a opcao 6 for selecionada o programa calcula e mostra o fatorial do primeiro
+elemento da colecao.
+
+Se a opcao 7 for selecionada o programa mostra a colecao e reapresenta o menu.
+
+Se a opcao 8 for selecionada o programa diz em que posicao esta o maior elemento 
+da colecao e reapresenta o menu.
+
+Se a opcao 9 for seleciona ele sai.
+
+Obs: 
+
+1- O programa declara e usa um unico array.
+2- O ordenamento da colecao deve ser feito com metodo bolha.
