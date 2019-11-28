@@ -2,7 +2,7 @@
 exercicios em java
 
 
-Trabalho 2
+## Trabalho 2
 
 Escreve um programa que permita um usuario armazenar e manipular uma colecao
 de 20 numeros inteiros.
@@ -53,7 +53,7 @@ Obs:
 2- O ordenamento da colecao deve ser feito com metodo bolha.
 
 
-Trabalho 3
+## Trabalho 3
 
 escreva um programa que permita o usuário informar e manipular uma coleção de números
 inteiros.
