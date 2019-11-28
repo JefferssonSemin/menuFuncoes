@@ -1,16 +1,15 @@
 import javax.swing.*;
-
 import static java.lang.Integer.*;
 
 public class Trabalho3 {
+
     public static void main(String[] args) {
 
-        int numeroColecao = parseInt(JOptionPane.showInputDialog("Digite o tamanho da colecao"));
+        int numeroColecao = parseInt(JOptionPane.showInputDialog("Dígite o tamanho da coleção"));
         int[] colecao = new int[numeroColecao];
-        boolean repetido = false;
 
         for (int i = 0; i< numeroColecao; i++){
-            colecao[i] = parseInt(JOptionPane.showInputDialog("Digite um numero"));
+            colecao[i] = parseInt(JOptionPane.showInputDialog("Dígite um numero"));
         }
 
         int menu = lerOpcaoDoMenu();
@@ -20,23 +19,11 @@ public class Trabalho3 {
             case 1:
                 for (int i = 0; i < numeroColecao; i++)
                 {
-                    boolean ePrimo = true;
-                    int numero = colecao[i];
-                    for (int j = 2; j < numero; j++)
-                    {
-                        if (numero % i == 0)
-                        {
-                            ePrimo = false;
-                        }
-                    }
+                    if (ehPrimo(colecao[i]))
+                        System.out.println(" número "+ colecao[i] + " na posição " + i + " é primo");
 
-                    if (ePrimo)
-                    {
-                        System.out.println(colecao[i] + " é primo posição " + i);
-                    }
                 }
                 break;
-
 
             case 2:
 
@@ -86,7 +73,7 @@ public class Trabalho3 {
                 {
                     System.out.println(colecao[i]);
                 }
-                    break;
+                break;
 
             case 5:
                 for (int i = 0; i < numeroColecao; i++)
@@ -148,11 +135,23 @@ public class Trabalho3 {
         }
     }
 
+    public static boolean ehPrimo(int numero) {
+        if (numero % 2 == 0) {
+            return false;
+        }
+        for (long i = 3; i * i <= numero; i += 2) {
+            if (numero % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     private static Integer lerOpcaoDoMenu(){
         String menu = "[-------- Menu ---------]";
         menu += "\n[1] - Primos";
         menu += "\n[2] - Pares na frente";
-        menu += "\n[3] - Fatorial primeiro";
+        menu += "\n[3] - Fatorial primeiro número";
         menu += "\n[4] - Inverte";
         menu += "\n[5] - Tem repetido";
         menu += "\n[6] - Quem mais";
